@@ -1,0 +1,18 @@
+name       : ucl
+version    : 1.03
+release    : 1
+source     :
+    - http://www.oberhumer.com/opensource/ucl/download/ucl-1.03.tar.gz : b865299ffd45d73412293369c9754b07637680e5c826915f097577cd27350348
+license    : GPL-2.0-or-later
+component  : system.utils
+summary    : Portable lossless data compression library written in ANSI C
+description: |
+    UCL implements a number of compression algorithms that achieve an excellent compression ratio while allowing very fast decompression. Decompression requires no additional memory.
+environment: |
+    CFLAGS+=" -ansi"
+setup      : |
+    %configure --enable-shared --disable-static
+build      : |
+    %make
+install    : |
+    %make_install

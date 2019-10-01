@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>ucl</Name>
+        <Packager>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>system.utils</PartOf>
+        <Summary xml:lang="en">Portable lossless data compression library written in ANSI C</Summary>
+        <Description xml:lang="en">UCL implements a number of compression algorithms that achieve an excellent compression ratio while allowing very fast decompression. Decompression requires no additional memory.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>ucl</Name>
+        <Summary xml:lang="en">Portable lossless data compression library written in ANSI C</Summary>
+        <Description xml:lang="en">UCL implements a number of compression algorithms that achieve an excellent compression ratio while allowing very fast decompression. Decompression requires no additional memory.
+</Description>
+        <PartOf>system.utils</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/libucl.so.1</Path>
+            <Path fileType="library">/usr/lib64/libucl.so.1.0.0</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>ucl-devel</Name>
+        <Summary xml:lang="en">Development files for ucl</Summary>
+        <Description xml:lang="en">UCL implements a number of compression algorithms that achieve an excellent compression ratio while allowing very fast decompression. Decompression requires no additional memory.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">ucl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/ucl/ucl.h</Path>
+            <Path fileType="header">/usr/include/ucl/ucl_asm.h</Path>
+            <Path fileType="header">/usr/include/ucl/uclconf.h</Path>
+            <Path fileType="library">/usr/lib64/libucl.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2019-09-06</Date>
+            <Version>1.03</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Mislav Čakarić</Name>
+            <Email>mcakaric@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
