@@ -1,5 +1,6 @@
 libucl.so.1:__ucl_align_gap
 libucl.so.1:__ucl_init2
+libucl.so.1:__ucl_init_done
 libucl.so.1:__ucl_ptr_linear
 libucl.so.1:_ucl_config_check
 libucl.so.1:_ucl_version_date
